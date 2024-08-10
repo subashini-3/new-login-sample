@@ -2,7 +2,7 @@
 <head>
 <title>Register Form</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="js.js"></script>
+    
 
 <body>
 
@@ -11,25 +11,25 @@
 
         <h1>Register </h1>
 
-        <form name="myform2" onsubmit="return vfun1()">
+        <form name="myform2" action="register.php" method="POST">
 
             <p>Username</p>
-            <input type="text" name="uname1" placeholder="Enter Username">
+            <input type="text" name="uname1" placeholder="Enter Username" required="">
 
             <p>Email</p>
-            <input type="Email" name="email1" placeholder="Enter email id">
+            <input type="Email" name="email" placeholder="Enter email id" required="">
 
             <p>Password</p>
-            <input type="password" name="upswd1" placeholder="Enter Password">
+            <input type="password" name="upswd1" placeholder="Enter Password" required="">
 
             <p>Retype Password</p>
-            <input type="password" name="upswd2" placeholder="Re-Enter Password">
+            <input type="password" name="upswd2" placeholder="Re-Enter Password" required="">
 
              <div id="errorBox"></div>
             <input type="submit" name="" value="Register">
 
             <br><br>
-            <a href="index.html">existing user, login !?</a>
+            <a href="index.html">  Existing user? login!</a>
         </form>
         
     </div>
